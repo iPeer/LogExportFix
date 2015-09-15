@@ -1,0 +1,22 @@
+BEGIN Object
+    Name                UnrefinedLogs
+    MaxStackSize        3
+    RenderDepth         1
+    Price               -100
+    Sprite              RawWood
+    StackSprite         StackLogs
+    Properties          Material
+    Properties          Sellable
+END
+
+BEGIN Object
+    Name                Log
+    MaxStackSize        3
+    RenderDepth         1
+    Price               -100
+    Sprite              RawWood
+    StackSprite         StackLogs
+    Properties          Material
+    Properties          Sellable
+	Properties			Scripted
+END

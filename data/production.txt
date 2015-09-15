@@ -1,0 +1,47 @@
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             UnrefinedLogs  
+    Container            WorkshopSaw  
+    Distribution         NonCompeting  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             UnrefinedLogs  
+    Container            WorkshopSaw  
+    Distribution         OutOfStock  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             UnrefinedLogs  
+    Container            Table  
+    Room                 Workshop  
+    Distribution         NonCompeting  
+    MaxSlotId            3  
+    Condition            NotLoaded  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             UnrefinedLogs  
+    Room                 Workshop  
+    Distribution         NonCompeting  
+    Condition            NotLoaded  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             UnrefinedLogs  
+    Room                 Storage  
+    Distribution         NonCompeting  
+    Condition            NotLoaded  
+END
+
+BEGIN Processor
+    Processor            WorkshopSaw
+    Input                UnrefinedLogs
+    Output               Wood
+    OutputCount          4
+    OperatingTime        30.0
+END

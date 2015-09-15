@@ -1,0 +1,7 @@
+
+Name                 "Unexportable Logs"  
+Description          "Aims to fix an issue in PA Alpha 36 (where ALL logs are exported, even if you have carpentry) by changing the log type you get from trees and other sources into ones that won't be exported.\n\nThe logs in this mod behave exactly like the ones in the main game with one exception: They'll never be exported. Ever.\n\nNote: This will not affect log stacks that already exist, only one created after installation."  
+Author               iPeer  
+IsTranslation        false  
+FileID               F517746117  
+SteamAuthor          A76561197996927272  
